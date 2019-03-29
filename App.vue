@@ -6,6 +6,7 @@
         color="#841584"
         accessibility-label="Create new NULS wallet"
     />
+    <text v-if="wallet">{{wallet}}</text>
   </view>
 </template>
  
@@ -16,13 +17,13 @@ import { Account } from 'nuls-js';
 export default {
   data: function() {
     return {
-      message: "Hello World"
+      wallet: null
     };
   },
   methods: {
     onPress() {
-      new Account().create();
-      alert('Hi!');
+      this.wallet = new Account().create();
+      console.log(this.wallet);
     }
   }
 };
