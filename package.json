@@ -4,7 +4,9 @@
     "start": "expo start",
     "android": "expo start --android",
     "ios": "expo start --ios",
-    "eject": "expo eject"
+    "eject": "expo eject",
+    "dev:android": "./android/gradlew installDevKernelDebug",
+    "postinstall": "react-native link react-native-randombytes && ./node_modules/.bin/rn-nodeify --install --hack"
   },
   "dependencies": {
     "@tradle/react-native-http": "^2.0.1",
