@@ -1,9 +1,33 @@
 <template>
   <view class="container">
-    <text class="text-color-primary">My Vue Native App</text>
-    </view>
+    <button
+        :on-press="onPress"
+        title="Create Wallet"
+        color="#841584"
+        accessibility-label="Create new NULS wallet"
+    />
+  </view>
 </template>
  
+<script>
+import './shim.js';
+import { Account } from 'nuls-js';
+
+export default {
+  data: function() {
+    return {
+      message: "Hello World"
+    };
+  },
+  methods: {
+    onPress() {
+      new Account().create();
+      alert('Hi!');
+    }
+  }
+};
+</script>
+
 <style>
 .container {
   background-color: white;
