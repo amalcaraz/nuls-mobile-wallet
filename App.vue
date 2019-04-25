@@ -1,42 +1,10 @@
 <template>
-  <view class="container">
-    <button
-        :on-press="onPress"
-        title="Create Wallet"
-        color="#841584"
-        accessibility-label="Create new NULS wallet"
-    />
-    <text v-if="wallet">{{wallet}}</text>
-  </view>
+  <setup></setup>
 </template>
- 
-<script>
-import './shim.js';
-import { Account } from 'nuls-js';
 
+<script>
+import Setup from "./src/boot/setup.vue";
 export default {
-  data: function() {
-    return {
-      wallet: null
-    };
-  },
-  methods: {
-    onPress() {
-      this.wallet = new Account().create();
-      console.log(this.wallet);
-    }
-  }
+  components: { Setup }
 };
 </script>
-
-<style>
-.container {
-  background-color: white;
-  align-items: center;
-  justify-content: center;
-  flex: 1;
-}
-.text-color-primary {
-  color: blue;
-}
-</style>
