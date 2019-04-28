@@ -41,7 +41,6 @@ export default {
   methods: {
     onPress() {
       this.wallet = new Account().create();
-      console.log(this.wallet);
     }
   }
 };

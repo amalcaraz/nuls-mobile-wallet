@@ -34,7 +34,6 @@ export default {
   },
   methods: {
     handleItemClick(item) {
-      console.log(item);
       this.navigation.navigate(item.route);
     }
   }

@@ -32,15 +32,19 @@
 import { Account } from 'nuls-js';
 import React from "react";
 import { Button, Icon, Text, View, ListItem } from "native-base";
-
+import { mapGetters } from 'vuex';
+// import { vuexPersist } from '../../store';
+ 
 export default {
-  data() {
-    return {
-      wallets: []
-    };
+  created() { 
+    // vuexPersist.storage.clear();
+    // this.$store.dispatch('wallets/CLEAR_WALLETS');
+
+    // const wallets = this.obtainWallets();
+    // this.$store.dispatch('wallets/SAVE_WALLET', wallets[0]);
   },
-  created() {
-    this.wallets = this.obtainWallets();
+  computed: {
+    ...mapGetters('wallets', ['wallets']),
   },
   methods: {
     handleFabIconPress() {
@@ -48,11 +52,11 @@ export default {
     },
     createWallet() {
       const newWallet = new Account().create();
-      alert(`New wallet created \n ${newWallet.address}`);
-      this.wallets.push(newWallet);
+      alert(`New wallet created! \n${newWallet.address}`);
+      this.$store.dispatch('wallets/SAVE_WALLET', newWallet);
     },
     deleteWallet(address) {
-      this.wallets = this.wallets.filter((wallet) => wallet.address !== address);
+      this.$store.dispatch('wallets/DELETE_WALLET', address);
     },
     obtainWallets() {
       return Array.from({length: 1}, () => new Account().create());

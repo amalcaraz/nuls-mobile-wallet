@@ -1,2 +1,8 @@
+.expo
+.vscode
+
+android/.idea
+android/.gradle
+
 node_modules
 android/app/build
