@@ -17,7 +17,8 @@ const vuexPersistEmitter = () => store => {
   store.subscribe(mutation => {
     console.log(mutation.type);
     if (mutation.type === "RESTORE_MUTATION") {
-      store._vm.$root.$emit("storageReady");
+      // This is needed to fire the event after the listener has been setted up
+      setTimeout(() => store._vm.$root.$emit("storageReady"), 0);
     }
   });
 };

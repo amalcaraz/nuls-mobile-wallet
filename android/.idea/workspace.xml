@@ -6,71 +6,7 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="468685f0-5460-43ab-82ed-b119d1bf7e7f" name="Default" comment="" />
-    <ignored path="$PROJECT_DIR$/.gradle/" />
-    <ignored path="$PROJECT_DIR$/build/" />
-    <ignored path="$PROJECT_DIR$/../node_modules/react-native-randombytes/android/build/intermediates/aapt_friendly_merged_manifests/" />
-    <ignored path="$PROJECT_DIR$/../node_modules/react-native-randombytes/android/build/intermediates/annotation_processor_list/" />
-    <ignored path="$PROJECT_DIR$/../node_modules/react-native-randombytes/android/build/intermediates/apk_list/" />
-    <ignored path="$PROJECT_DIR$/../node_modules/react-native-randombytes/android/build/intermediates/blame/" />
-    <ignored path="$PROJECT_DIR$/../node_modules/react-native-randombytes/android/build/intermediates/check-manifest/" />
-    <ignored path="$PROJECT_DIR$/../node_modules/react-native-randombytes/android/build/intermediates/incremental/" />
-    <ignored path="$PROJECT_DIR$/../node_modules/react-native-randombytes/android/build/intermediates/intermediate-jars/" />
-    <ignored path="$PROJECT_DIR$/../node_modules/react-native-randombytes/android/build/intermediates/javac/" />
-    <ignored path="$PROJECT_DIR$/../node_modules/react-native-randombytes/android/build/intermediates/jniLibs/" />
-    <ignored path="$PROJECT_DIR$/../node_modules/react-native-randombytes/android/build/intermediates/library_assets/" />
-    <ignored path="$PROJECT_DIR$/../node_modules/react-native-randombytes/android/build/intermediates/lint_jar/" />
-    <ignored path="$PROJECT_DIR$/../node_modules/react-native-randombytes/android/build/intermediates/merged_assets/" />
-    <ignored path="$PROJECT_DIR$/../node_modules/react-native-randombytes/android/build/intermediates/merged_manifests/" />
-    <ignored path="$PROJECT_DIR$/../node_modules/react-native-randombytes/android/build/intermediates/packaged_res/" />
-    <ignored path="$PROJECT_DIR$/../node_modules/react-native-randombytes/android/build/intermediates/processed_res/" />
-    <ignored path="$PROJECT_DIR$/../node_modules/react-native-randombytes/android/build/intermediates/public_res/" />
-    <ignored path="$PROJECT_DIR$/../node_modules/react-native-randombytes/android/build/intermediates/res/" />
-    <ignored path="$PROJECT_DIR$/../node_modules/react-native-randombytes/android/build/intermediates/rs/" />
-    <ignored path="$PROJECT_DIR$/../node_modules/react-native-randombytes/android/build/intermediates/shader_assets/" />
-    <ignored path="$PROJECT_DIR$/../node_modules/react-native-randombytes/android/build/intermediates/shaders/" />
-    <ignored path="$PROJECT_DIR$/../node_modules/react-native-randombytes/android/build/intermediates/symbols/" />
-    <ignored path="$PROJECT_DIR$/../node_modules/react-native-randombytes/android/build/intermediates/tmp/" />
-    <ignored path="$PROJECT_DIR$/../node_modules/react-native-randombytes/android/build/intermediates/transforms/" />
-    <ignored path="$PROJECT_DIR$/../node_modules/react-native-randombytes/android/build/outputs/" />
-    <ignored path="$PROJECT_DIR$/../node_modules/react-native-randombytes/android/build/tmp/" />
-    <ignored path="$PROJECT_DIR$/app/build/intermediates/annotation_processor_list/" />
-    <ignored path="$PROJECT_DIR$/app/build/intermediates/apk_list/" />
-    <ignored path="$PROJECT_DIR$/app/build/intermediates/blame/" />
-    <ignored path="$PROJECT_DIR$/app/build/intermediates/build-info/" />
-    <ignored path="$PROJECT_DIR$/app/build/intermediates/builds/" />
-    <ignored path="$PROJECT_DIR$/app/build/intermediates/check-libraries/" />
-    <ignored path="$PROJECT_DIR$/app/build/intermediates/check-manifest/" />
-    <ignored path="$PROJECT_DIR$/app/build/intermediates/checkDevKernelDebugClasspath/" />
-    <ignored path="$PROJECT_DIR$/app/build/intermediates/compatible_screen_manifest/" />
-    <ignored path="$PROJECT_DIR$/app/build/intermediates/incremental/" />
-    <ignored path="$PROJECT_DIR$/app/build/intermediates/incremental-classes/" />
-    <ignored path="$PROJECT_DIR$/app/build/intermediates/incremental-runtime-classes/" />
-    <ignored path="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/" />
-    <ignored path="$PROJECT_DIR$/app/build/intermediates/instant-run-apk/" />
-    <ignored path="$PROJECT_DIR$/app/build/intermediates/instant_run_main_apk_resources/" />
-    <ignored path="$PROJECT_DIR$/app/build/intermediates/instant_run_merged_manifests/" />
-    <ignored path="$PROJECT_DIR$/app/build/intermediates/instant_run_split_apk_resources/" />
-    <ignored path="$PROJECT_DIR$/app/build/intermediates/javac/" />
-    <ignored path="$PROJECT_DIR$/app/build/intermediates/jniLibs/" />
-    <ignored path="$PROJECT_DIR$/app/build/intermediates/lint_jar/" />
-    <ignored path="$PROJECT_DIR$/app/build/intermediates/manifest-checker/" />
-    <ignored path="$PROJECT_DIR$/app/build/intermediates/merged_assets/" />
-    <ignored path="$PROJECT_DIR$/app/build/intermediates/merged_manifests/" />
-    <ignored path="$PROJECT_DIR$/app/build/intermediates/prebuild/" />
-    <ignored path="$PROJECT_DIR$/app/build/intermediates/processed_res/" />
-    <ignored path="$PROJECT_DIR$/app/build/intermediates/reload-dex/" />
-    <ignored path="$PROJECT_DIR$/app/build/intermediates/res/" />
-    <ignored path="$PROJECT_DIR$/app/build/intermediates/resources/" />
-    <ignored path="$PROJECT_DIR$/app/build/intermediates/rs/" />
-    <ignored path="$PROJECT_DIR$/app/build/intermediates/shader_assets/" />
-    <ignored path="$PROJECT_DIR$/app/build/intermediates/shaders/" />
-    <ignored path="$PROJECT_DIR$/app/build/intermediates/split-apk/" />
-    <ignored path="$PROJECT_DIR$/app/build/intermediates/split_list/" />
-    <ignored path="$PROJECT_DIR$/app/build/intermediates/symbols/" />
-    <ignored path="$PROJECT_DIR$/app/build/intermediates/transforms/" />
-    <ignored path="$PROJECT_DIR$/app/build/outputs/" />
-    <ignored path="$PROJECT_DIR$/app/build/tmp/" />
+    <list default="true" id="39e56767-fd0c-49b7-8cc8-40c0c4ed312b" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -5672,8 +5608,13 @@
         </entry>
       </map>
     </option>
+    <option name="projectSyncType">
+      <map>
+        <entry key="$PROJECT_DIR$" value="RE_IMPORT" />
+      </map>
+    </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds">
     <option name="y" value="23" />
     <option name="width" value="1680" />
     <option name="height" value="1027" />
@@ -5762,25 +5703,15 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="AndroidView">
-        <subPane>
-          <expand>
-            <path>
-              <item name="android" type="1abcf292:AndroidViewProjectNode" />
-              <item name="app" type="feadf853:AndroidModuleNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
       <pane id="Scope" />
+      <pane id="AndroidView" />
       <pane id="ProjectPane" />
       <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="android.sdk.path" value="$USER_HOME$/Library/Android/sdk" />
-    <property name="device.picker.selection" value="Pixel_2_API_P" />
+    <property name="device.picker.selection" value="ccf72984" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="android.sdk-updates" />
   </component>
@@ -5901,33 +5832,33 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="468685f0-5460-43ab-82ed-b119d1bf7e7f" name="Default" comment="" />
-      <created>1556203318671</created>
+      <changelist id="39e56767-fd0c-49b7-8cc8-40c0c4ed312b" name="Default" comment="" />
+      <created>1556485718870</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1556203318671</updated>
+      <updated>1556485718870</updated>
     </task>
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1680" height="1027" extended-state="6" />
+    <frame x="0" y="23" width="1680" height="1027" extended-state="0" />
     <layout>
-      <window_info anchor="bottom" id="Android Profiler" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Android Profiler" order="7" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="right" id="Palette&#9;" order="3" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Build Variants" order="2" side_tool="true" />
       <window_info anchor="right" id="Capture Analysis" order="3" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.42258066" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32795697" />
       <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info anchor="bottom" id="Logcat" order="7" />
       <window_info id="Captures" order="2" weight="0.25" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24969475" />
-      <window_info anchor="bottom" id="Build" order="7" visible="true" weight="0.32903227" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21733822" />
+      <window_info anchor="bottom" id="Build" order="7" weight="0.31827956" />
       <window_info anchor="right" id="Gradle" order="3" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Device File Explorer" order="3" side_tool="true" />

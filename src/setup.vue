@@ -29,20 +29,17 @@ export default {
     async loadFonts() {
       try {
         this.isAppReady = false;
-
         await new Promise(resolve => {
           store._vm.$root.$on("storageReady", () => {
             console.log("stateBeingFilled", store.state);
             resolve();
           });
         });
-
         await Expo.Font.loadAsync({
           Roboto: require("native-base/Fonts/Roboto.ttf"),
           Roboto_medium: require("native-base/Fonts/Roboto_medium.ttf"),
           Ionicons: require("@expo/vector-icons/fonts/Ionicons.ttf")
         });
-
         this.isAppReady = true;
       } catch (error) {
         console.log("some error occured", error);

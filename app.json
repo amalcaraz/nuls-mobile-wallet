@@ -26,7 +26,10 @@
       "supportsTablet": true,
       "bundleIdentifier": "nuls.wallet",
       "publishBundlePath": "ios/nuls-wallet/Supporting/shell-app.bundle",
-      "publishManifestPath": "ios/nuls-wallet/Supporting/shell-app-manifest.json"
+      "publishManifestPath": "ios/nuls-wallet/Supporting/shell-app-manifest.json",
+      "infoPlist": {
+        "NSCameraUsageDescription": "This app uses the camera to perform a FaceID authentication before doing any cryptographic operation."
+      }
     },
     "packagerOpts": {
       "config": "rn-cli.config.js"

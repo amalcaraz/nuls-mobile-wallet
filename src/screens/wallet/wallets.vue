@@ -11,37 +11,50 @@
         <nb-swipe-row 
           v-for="wallet in wallets"
           :key="wallet.address"
-          :leftOpenValue="75"
           :rightOpenValue="-75"
-          :left="getSwipeLeftComponet(wallet)"
           :body="getSwipeBodyComponet(wallet)"
           :right="getSwipeRightComponet(wallet)"
         />
       </nb-list>
     </nb-content>
-     <nb-fab 
-        :onPress="handleFabIconPress"
-        direction="up" 
-        position="bottomRight">
-        <nb-icon-nb name="md-add"></nb-icon-nb>
-      </nb-fab>
+    <nb-fab 
+      :onPress="handleFabIconPress"
+      direction="up" 
+      position="bottomRight">
+      <nb-icon-nb name="md-add"></nb-icon-nb>
+    </nb-fab>
+    <auth-dialog v-if="fingerPrint"></auth-dialog>
   </nb-container>
-</template>
+</template> 
  
 <script>
 import { Account } from 'nuls-js';
 import React from "react";
-import { Button, Icon, Text, View, ListItem } from "native-base";
+import { Button, Icon, Text, View, ListItem, Toast } from "native-base";
 import { mapGetters } from 'vuex';
-// import { vuexPersist } from '../../store';
+import { Wallet } from '../../models/wallet';
+import { LocalAuthentication } from 'expo';
+import AuthDialog from '../../components/authDialog';
+
  
+// import { vuexPersist } from '../../store';
+
 export default {
+  components: {
+    AuthDialog
+  },
   created() { 
+
     // vuexPersist.storage.clear();
     // this.$store.dispatch('wallets/CLEAR_WALLETS');
 
     // const wallets = this.obtainWallets();
     // this.$store.dispatch('wallets/SAVE_WALLET', wallets[0]);
+  },
+  data() {
+    return  {
+      fingerPrint: false
+    }
   },
   computed: {
     ...mapGetters('wallets', ['wallets']),
@@ -50,23 +63,42 @@ export default {
     handleFabIconPress() {
       this.createWallet();
     },
-    createWallet() {
-      const newWallet = new Account().create();
-      alert(`New wallet created! \n${newWallet.address}`);
-      this.$store.dispatch('wallets/SAVE_WALLET', newWallet);
+    async requestAuth() {
+      this.fingerPrint = true;
+      const result = await LocalAuthentication.authenticateAsync();
+      this.fingerPrint = false;
+      return result;
+    },
+    async createWallet() {
+
+      const result = await this.requestAuth();
+      
+      if (result.success) {
+
+        const newWallet = new Account().create();
+        this.$store.dispatch('wallets/SAVE_WALLET', newWallet);
+
+        Toast.show({
+          text: `New wallet created! \n${newWallet.address}`,
+          type: "success",
+          duration: 3000
+        });
+
+      } else {
+
+        Toast.show({
+          text: `Authentication failed :(`,
+          type: "error",
+          duration: 3000
+        });
+
+      }
     },
     deleteWallet(address) {
       this.$store.dispatch('wallets/DELETE_WALLET', address);
     },
     obtainWallets() {
       return Array.from({length: 1}, () => new Account().create());
-    },
-    getSwipeLeftComponet(wallet) {
-      return (
-        <Button success onPress={() => alert("Add")}>
-          <Icon active name="add" />
-        </Button> 
-      );
     },
     getSwipeBodyComponet(wallet) {
       return (

@@ -1,6 +1,7 @@
 <template>
   <root>
     <app-navigation></app-navigation>
+    <!-- <auth-dialog></auth-dialog>  -->
   </root>
 </template>
 
@@ -15,6 +16,7 @@ import WalletNavigation from "./screens/wallet";
 import SideBarNav from "./screens/sidebar.vue";
 import TabBar from "./screens/tabbar.vue";
 import Expo from 'expo';
+import AuthDialog from "./components/authDialog";
 
 const Drawer = DrawerNavigator(
   {
@@ -63,6 +65,6 @@ const AppNavigation = StackNavigator(
   }
 );
 export default {
-  components: { Root, AppNavigation }
+  components: { Root, AppNavigation, AuthDialog }
 };
 </script> 

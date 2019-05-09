@@ -1,10 +1,10 @@
 {
   "devToolsPort": 19002,
-  "expoServerPort": null,
-  "packagerPort": null,
-  "packagerPid": null,
+  "expoServerPort": 19000,
+  "packagerPort": 19001,
+  "packagerPid": 4084,
   "expoServerNgrokUrl": "https://4x-n9y.amalcaraz.nuls-mobile-wallet.exp.direct",
   "packagerNgrokUrl": "https://packager.4x-n9y.amalcaraz.nuls-mobile-wallet.exp.direct",
-  "ngrokPid": 9095,
+  "ngrokPid": 4109,
   "webpackServerPort": null
 }
